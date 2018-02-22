@@ -1,0 +1,87 @@
+/* Global Style  */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+/* Main Section Styles */
+
+.main-section {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #161616;
+}
+
+.checkbox-base {
+    width: 24px;
+    height: 24px;
+    border: 2px solid #fff;
+    cursor: pointer;
+    z-index: 9;
+}
+
+.js-checkbox-base {
+    border: 2px solid #8e44ad;
+    background-color: #8e44ad;
+}
+.checkbox-tick {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    opacity: 0;
+    transform: rotate(0deg);
+    transition: 300ms ease-in-out;
+}
+
+.tick-vertical {
+    width: 2px;
+    height: 8px;
+    position: absolute;
+    left: 2px;
+    bottom: 2px;;
+    background-color: #fff;
+}
+
+.tick-horizantal {
+    width: 18px;
+    height: 2px;
+    position: absolute;
+    left: 2px;
+    bottom: 2px;;
+    background-color: #fff;
+}
+
+.js-check-tick-on {
+    opacity: 1;
+    transform: rotate(-45deg);
+    transition: 300ms ease-in-out;
+
+}
+
+.list-text {
+    font-size: 16px;
+    font-family: 'Space Mono', monospace;
+    color: #fff;
+    margin-left: 16px;
+    transition: 300ms ease-in-out;
+}
+
+.js-list-text {
+    color: #455A64;
+    text-decoration: line-through;
+    text-decoration-color: #8e44ad;
+}
+
+
+
